@@ -178,8 +178,14 @@
   }
 }
 @layer utilities {
+  .m-3 {
+    margin: calc(var(--spacing) * 3);
+  }
   .m-5 {
     margin: calc(var(--spacing) * 5);
+  }
+  .mx-10 {
+    margin-inline: calc(var(--spacing) * 10);
   }
   .mx-auto {
     margin-inline: auto;
@@ -187,20 +193,62 @@
   .my-3 {
     margin-block: calc(var(--spacing) * 3);
   }
+  .my-5 {
+    margin-block: calc(var(--spacing) * 5);
+  }
   .mb-3 {
     margin-bottom: calc(var(--spacing) * 3);
   }
   .flex {
     display: flex;
   }
+  .inline {
+    display: inline;
+  }
   .h-30 {
     height: calc(var(--spacing) * 30);
+  }
+  .h-50 {
+    height: calc(var(--spacing) * 50);
+  }
+  .h-53 {
+    height: calc(var(--spacing) * 53);
+  }
+  .h-55 {
+    height: calc(var(--spacing) * 55);
+  }
+  .h-60 {
+    height: calc(var(--spacing) * 60);
+  }
+  .h-70 {
+    height: calc(var(--spacing) * 70);
+  }
+  .h-100 {
+    height: calc(var(--spacing) * 100);
+  }
+  .h-500 {
+    height: calc(var(--spacing) * 500);
+  }
+  .h-700 {
+    height: calc(var(--spacing) * 700);
   }
   .h-screen {
     height: 100vh;
   }
   .w-30 {
     width: calc(var(--spacing) * 30);
+  }
+  .w-80 {
+    width: calc(var(--spacing) * 80);
+  }
+  .w-90 {
+    width: calc(var(--spacing) * 90);
+  }
+  .w-95 {
+    width: calc(var(--spacing) * 95);
+  }
+  .w-100 {
+    width: calc(var(--spacing) * 100);
   }
   .w-140 {
     width: calc(var(--spacing) * 140);
@@ -345,6 +393,31 @@
   }
   .outline-rose-500 {
     outline-color: var(--color-rose-500);
+  }
+  .md\:h-30 {
+    @media (width >= 48rem) {
+      height: calc(var(--spacing) * 30);
+    }
+  }
+  .md\:w-130 {
+    @media (width >= 48rem) {
+      width: calc(var(--spacing) * 130);
+    }
+  }
+  .md\:w-140 {
+    @media (width >= 48rem) {
+      width: calc(var(--spacing) * 140);
+    }
+  }
+  .md\:w-150 {
+    @media (width >= 48rem) {
+      width: calc(var(--spacing) * 150);
+    }
+  }
+  .md\:w-200 {
+    @media (width >= 48rem) {
+      width: calc(var(--spacing) * 200);
+    }
   }
 }
 @property --tw-border-style {
