@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind Portfolio</title>
+  <!-- <script src="https://unpkg.com/@tailwindcss/browser@4"></script> -->
+  <script src="https://kit.fontawesome.com/cfb8d0f0ff.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="output.css">
+</head>
+<body class="h-screen flex justify-center items-center bg-gray-400">
+  <div class="flex flex-col w-150 bg-white rounded-2xl border-2 border-rose-900 shadow-2xl">
+    <header class="flex justify-between items-center bg-rose-300 py-3 px-3 rounded-t-2xl text-white">
+      <div class="flex gap-x-3">
+        <a href="#"><i class="fa-solid fa-circle-dot"></i></a>
+        <a href="#"><i class="fa-solid fa-circle-dot"></i></a>
+        <a href="#"><i class="fa-solid fa-circle-dot"></i></a>
+      </div>
+      <i class="fa-solid fa-x"></i>
+    </header>
+
+    <nav class="bg-linear-to-r from-rose-400 to-rose-100 flex justify-between items-center py-1 px-3 border-y-2 border-t-white border-b-rose-900">
+      <i class="fa-solid fa-house text-rose-900"></i>
+      <h1 class="font-bold text-rose-950">Welcome to my Portfolio</h1>
+      <div class="flex gap-x-3">
+        <a href=""><i class="fa-brands fa-twitter text-rose-900"></i></a>
+        <a href=""><i class="fa-brands fa-instagram text-rose-900"></i></a>
+        <a href=""><i class="fa-brands fa-pinterest text-rose-900"></i></a>
+      </div>
+    </nav>
+
+    <main>
+      <div class="flex items-center justify-center gap-x-5 m-5 bg-white">
+      <img src="img/bunny.jpg" alt="" class="w-30 h-30">
+        <div>
+          <h2 class="font-bold text-xl font-serif text-rose-950 mb-3">@majorbnuy</h2>
+          <p class="text-sm text-rose-950">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores asperiores commodi dignissimos laudantium? Totam, id facere ad voluptas quas sit reiciendis consequatur minus voluptatum quasi atque. </p>
+        </div>
+      </div>
+      <div class="flex mx-auto justify-around border border-rose-900 p-1 my-3 bg-linear-to-r from-rose-100 to-rose-400 text-rose-950 text-sm w-140 rounded-2xl">
+        <p>commissons: closed</p>
+        <p>waitlist: open</p>
+        <p>status: working</p>
+      </div>
+    </main>
+
+    <footer class=" bg-rose-300 p-3 rounded-b-2xl flex justify-end border-t-2 border-rose-900">
+      <form action="#" method="post" class=" ">
+        <input type="text" name="text" id="text" placeholder="send message..." class="text-rose-900 py-1 pl-4 outline-rose-500 rounded-2xl bg-white">
+      </form>
+    </footer>
+  </div>
+
+</body>
+</html>
